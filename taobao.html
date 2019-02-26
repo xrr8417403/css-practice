@@ -1,61 +1,161 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+	<meta charset="uft-8">
 	<title>淘宝网 - 淘！我喜欢</title>
 </head>
 <body>
 <style type="text/css">
+
 *{
 	margin:0px;
 	padding:0px;
 }
 
+.backgroud{
+	width: 100%;
+	height: 35px;
+	background-color: #f5f5f5;
+	box-shadow: 0 0 0.5px;
+}
+
+.nav-left{
+	display: inline-table;
+	position: relative;
+	float: left;
+}
+
+.nav-right{
+	display: inline-table;
+	position: relative;
+	float: right;
+}
+
 li{
+	float: left;
 	list-style: none;
-	display: inline;
-	top: 50%;
-	margin-top: -17.5px;
+	width: 80px;
 	margin-left: 8px;
 	line-height: 35px;
 	font-family: tahoma;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .dropdown{
-	display: inline;
+	display: inline-block;
 	position: relative;
 }
 
-.dropdown-content{
-	display: none;
-	position: absolute;
-	background-color: #f5f5f5;
-	min-width: 160px;
+.dropdown span{
+	line-height: 35px;
+}
+
+
+.dropdown:hover .dropdown-content ul{
+	display: block;
 
 }
-.dropdown:hover .dropdown-content{
+
+.dropdown:hover {
+	background-color: #fff;
+	box-shadow: 0 0 0.5px;
+
+}
+
+.dropdown-content ul li:hover{
+	background-color: #f5f5f5;
+}
+
+.dropdown-content ul{
+	display: none;
+	position: absolute;
+	min-width: 200px;
+	max-height: 250px;
+	overflow-y: scroll;
+	background-color: #fff;
+	box-shadow: 0 0 0.5px;
+}
+
+.dropdown-content ul li{
+	float: none;
+	width: 100%;
+	line-height: 25px;
+
+}
+
+.site-nav-map{
+	display: none;
+}
+
+.site-nav:hover .site-nav-map{
 	display: block;
+}
+
+.site-nav-map li{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: inline-block;
+	float: left;
+	margin:0px;
+
+}
+
+a{
+	color: #3c3c3c;
+	text-decoration: none;
 }
 
 
 
 </style>
-<div style="margin:0 auto;width:1190px;height: 35px;background-color: #f5f5f5">
-	<ul>
-		<li>
-			<div class="dropdown">
-				<span>中国大陆</span>
-				<div class="dropdown-content">
-					<span>全球</span>
-					<span>中国大陆</span>
-					<span>香港</span>
+<div class="backgroud">
+	<div class="nav" style="margin:0 auto;width:1190px;height: 35px;background-color: #f5f5f5;">
+		<ul class="nav-left">
+			<li>
+				<div class="dropdown">
+					<span><a href="#">中国大陆</a></span>
+					<span class="arrow"></span>
+					<div class="dropdown-content">
+						<ul>
+							<li><a href="#">全球</a></li>
+							<li><a href="#">中国大陆</a></li>
+							<li><a href="#">香港</a></li>
+							<li><a href="#">全球</a></li>
+							<li><a href="#">中国大陆</a></li>
+							<li><a href="#">香港</a></li>
+							<li><a href="#">全球</a></li>
+							<li><a href="#">中国大陆</a></li>
+							<li><a href="#">香港</a></li>
+							<li><a href="#">全球</a></li>
+							<li><a href="#">中国大陆</a></li>
+							<li><a href="#">香港</a></li>
+						</ul>
+
+					</div>
 				</div>
-			</div>
-		</li>
-		<li>亲，请登陆</li>
-		<li>免费注册</li>
-		<li>手机逛淘宝</li>
-	</ul>
+			</li>
+			<li><a href="#" style="color: #f40">亲，请登陆</a></li>
+			<li><a href="#">免费注册</a></li>
+			<li><a href="#">手机逛淘宝</a></li>
+		</ul>
+		<ul class="nav-right">
+			<li><a href="#">我的淘宝</a></li>
+			<li><a href="#">购物车</a></li>
+			<li><a href="#">收藏夹</a></li>
+			<li><a href="#">商品分类</a></li>
+			<li><a href="#">卖家中心</a></li>
+			<li><a href="#">联系客服</a></li>
+			<li class="site-nav"><a href="#">网站导航</a>
+				<ul class="site-nav-map">
+					<li><div style="width: 200px;height:200px;background-color: red"></div></li>
+					<li><div style="width: 200px;height:200px;background-color: blue"></div></li>
+					<li><div style="width: 200px;height:200px;background-color: green"></div></li>
+					<li><div style="width: 200px;height:200px;background-color: gray"></div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 </div>
 </body>
 </html>
