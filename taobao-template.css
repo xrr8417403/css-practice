@@ -1,0 +1,254 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+* {
+	margin: 0px;
+	border: 0px;
+}
+
+.header {
+	background: lavender;
+	border-bottom: 1px solid lavender;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: "tahoma";
+	font-size: 12px;
+}
+
+/* 必须要设置为absolute,因为css层叠问题*/
+
+ul {
+	padding: 5px 0;
+	margin: 5px 0 0 -6px;
+	display: none;
+	opacity: 0;
+	/* 透明度 */
+	background-color: white;
+	list-style: none;
+	border: 1px solid lavender;
+	border-top: none;
+	z-index: 1000;
+}
+
+ul li {
+	margin-top: 10px;
+}
+
+ul li:hover {
+	background-color: lavender;
+}
+
+.header span {
+	float: left;
+	padding: 5px 15px 5px 5px;
+	margin-left: 10px;
+}
+
+.header span:nth-child(1)>ul {
+	width: 300px;
+	height: 250px;
+	overflow-y: scroll;
+}
+
+/* 图标 */
+.Tag::after,
+.tag::after {
+	position: absolute;
+	display: block;
+	height: 3px;
+	width: 3px;
+	margin: -15px 0 0 70px;
+	content: "";
+	transform: rotateZ(45deg);
+	border: 2px solid darkgray;
+	border-top: none;
+	border-left: none;
+}
+
+.Tag::after {
+	margin: -15px 0 0 70px;
+}
+
+.img {
+	position: absolute;
+	margin-left: -17px;
+}
+
+.header span>a:hover {
+	color: orange;
+}
+
+.header span:nth-child(1) ul {
+	position: absolute;
+}
+
+.header span:nth-child(1):hover {
+	background-color: white;
+}
+
+.header span:nth-child(1):hover ul {
+	display: block;
+	opacity: 1;
+	left: 0px;
+	margin: 5px 0 0 9px;
+}
+
+.header span:nth-child(2) ul {
+	position: absolute;
+}
+
+.header span:nth-child(2) a {
+	color: orange;
+}
+
+.header span:nth-child(2):hover a {}
+
+.header span:nth-child(3) ul {
+	position: absolute;
+}
+
+.header span:nth-child(3) a:nth-child(1) {}
+
+.header span:nth-child(4) ul {
+	position: absolute;
+}
+
+.header span:nth-child(4) {
+	margin-right: 20%;
+}
+
+.header span:nth-child(4) a:nth-child(1) {}
+
+.header span:nth-child(5) ul {
+	position: absolute;
+}
+
+.header span:nth-child(5) a:nth-child(5) {}
+
+.header span:nth-child(5):hover {
+	background-color: white;
+}
+
+.header span:nth-child(5):hover ul {
+	display: block;
+	opacity: 1;
+}
+
+.header span:nth-child(6) ul {
+	position: absolute;
+}
+
+.header span:nth-child(6):hover {}
+
+.header span:nth-child(7) ul {
+	position: absolute;
+}
+
+.header span:nth-child(7):hover {
+	background-color: white;
+}
+
+.header span:nth-child(7):hover .img {
+	display: none;
+}
+
+.header span:nth-child(7):hover ul {
+	display: block;
+	opacity: 1;
+}
+
+.header span:nth-child(8) ul {
+	position: absolute;
+}
+
+.header span:nth-child(9) ul {
+	position: absolute;
+}
+
+.header span:nth-child(9):hover {
+	background-color: white;
+}
+
+.header span:nth-child(9):hover ul {
+	display: block;
+	opacity: 1;
+}
+
+.header span:nth-child(10) ul {
+	position: absolute;
+}
+
+.header span:nth-child(10):hover {
+	background-color: white;
+}
+
+.header span:nth-child(10):hover ul {
+	display: block;
+	opacity: 1;
+}
+
+.header span:nth-child(11):hover {
+	background-color: white;
+}
+
+.header span:nth-child(11)>ul {
+	position: absolute;
+	left: 2%;
+	width: 96%;
+	z-index: 1000;
+}
+
+.header span:nth-child(11):hover ul {
+	display: block;
+	opacity: 1;
+}
+
+.header span:nth-child(11)>ul>i {
+	width: 24%;
+	display: inline-block;
+}
+
+.header span:nth-child(11):hover>ul li {
+	background-color: white;
+}
+
+.header span:nth-child(11) i:nth-child(1) a:hover {
+	color: orange;
+}
+
+.header span:nth-child(11) i:nth-child(2) a:hover {
+	color: limegreen;
+}
+
+.header span:nth-child(11) i:nth-child(3) a:hover {
+	color: blueviolet;
+}
+
+.header span:nth-child(11) i:nth-child(4) a:hover {
+	color: dodgerblue;
+}
+
+/* 消除边距问题 */
+.example {
+	margin: 0px;
+	padding: 0px 15px;
+}
+
+.example h2 {
+	font-weight: 600;
+	font-size: large;
+}
+
+.example li {
+	display: inline-block;
+}
+
+.example:nth-child(1) li {
+	padding: 0 10% 0 0;
+}
