@@ -13,31 +13,36 @@
 }
 
 .backgroud{
-	width: 100%;
+/*	width: 100%;*/
 	height: 35px;
 	background-color: #f5f5f5;
-	box-shadow: 0 0 0.5px;
+	border-bottom: 1px solid lavender;
 }
 
 .nav-left{
-	display: inline-table;
-	position: relative;
+/*	display: inline-table;
+	position: relative;*/
 	float: left;
 }
 
 .nav-right{
-	display: inline-table;
-	position: relative;
+/*	display: inline-table;
+	position: relative;*/
 	float: right;
 }
 
-li{
-	float: left;
+ul{
 	list-style: none;
-	width: 80px;
+}
+
+.nav li{
+	float: left;
+/*	width: 80px;*/
+	padding: 0 10px;
 	margin-left: 8px;
+	height: 35px;
 	line-height: 35px;
-	font-family: tahoma;
+	font-family: arial;
 	font-size: 12px;
 }
 
@@ -58,7 +63,7 @@ li{
 
 .dropdown:hover {
 	background-color: #fff;
-	box-shadow: 0 0 0.5px;
+
 
 }
 
@@ -69,16 +74,19 @@ li{
 .dropdown-content ul{
 	display: none;
 	position: absolute;
-	min-width: 200px;
+	min-width: 300px;
 	max-height: 250px;
 	overflow-y: scroll;
+	overflow-x: none;
 	background-color: #fff;
-	box-shadow: 0 0 0.5px;
+	border: 1px solid lavender;
+	border-top: none;
 }
 
 .dropdown-content ul li{
 	float: none;
 	width: 100%;
+	margin:0px;
 	line-height: 25px;
 
 }
@@ -103,10 +111,56 @@ li{
 
 a{
 	color: #3c3c3c;
+/*	line-height: 35px;*/
 	text-decoration: none;
 }
 
+.dropdown > span ::after{
+	position: absolute;
+	display: block;
+	height: 2px;
+	width: 2px;
+	margin:-20px 0px 0px 55px;
+	content: "";
+	transform: rotateZ(45deg);
+	border: 2px solid darkgray;
+	border-top: none;
+	border-left: none;
+}
 
+.top.J-Top{
+	padding-top: 24px;
+	width: 1020px;
+	margin:0 auto;
+	height: 97px;
+}
+
+.logo{
+	float: left;
+	width: 190px;
+	height: 88px;
+
+
+}
+
+.logo a{
+	width: 142px;
+	height: 88px;
+	display: block;
+	background-image: url(tb.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.middle-search div{
+	float: left;
+}
+
+.middle-search div::after{
+	content: "";
+	display: block;
+	clear:both;
+}
 
 </style>
 <div class="backgroud">
@@ -115,7 +169,7 @@ a{
 			<li>
 				<div class="dropdown">
 					<span><a href="#">中国大陆</a></span>
-					<span class="arrow"></span>
+					<!-- <span class="arrow"></span> -->
 					<div class="dropdown-content">
 						<ul>
 							<li><a href="#">全球</a></li>
@@ -146,8 +200,9 @@ a{
 			<li><a href="#">商品分类</a></li>
 			<li><a href="#">卖家中心</a></li>
 			<li><a href="#">联系客服</a></li>
-			<li class="site-nav"><a href="#">网站导航</a>
-				<ul class="site-nav-map">
+			<li class="site-nav"><a href="#">网站导航</a></li>
+			<li class="site-nav-map">
+				<ul>
 					<li><div style="width: 200px;height:200px;background-color: red"></div></li>
 					<li><div style="width: 200px;height:200px;background-color: blue"></div></li>
 					<li><div style="width: 200px;height:200px;background-color: green"></div></li>
@@ -156,6 +211,20 @@ a{
 			</li>
 		</ul>
 	</div>
+</div>
+<div class="top J-Top">
+	<div class="logo"><a href="https://www.taobao.com" ></a></div>
+	<div class="middle">
+		<ul>
+			<li class="middle-top"><span>宝贝</span><span>天猫</span><span>店铺</span></li>
+			<li class="middle-search">
+				<div class="input"><input type="text" name="content"></div>
+				<div class="search-button"><input type="submit" value="搜索"></div>
+			</li>
+			<li class="middle-bottom"><span>新款连衣裙</span><span>四件套</span><span>潮流T恤</span><span>时尚女鞋</span><span>短裤</span><span>半身裙</span><span>男士外套</span><span>墙纸</span><span>行车记录仪</span><span>新款男鞋</span><span>耳机</span><span>时尚女包</span><span>沙发</span></li>
+		</ul>	
+	</div>
+	<div class="mobile"></div>
 </div>
 </body>
 </html>
