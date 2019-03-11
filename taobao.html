@@ -10,6 +10,7 @@
 *{
 	margin:0px;
 	padding:0px;
+	font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
 }
 
 .backgroud{
@@ -42,8 +43,8 @@ ul{
 	margin-left: 8px;
 	height: 35px;
 	line-height: 35px;
-	font-family: arial;
-	font-size: 12px;
+/*	font-family: arial;
+	font-size: 12px;*/
 }
 
 .dropdown{
@@ -138,7 +139,7 @@ a{
 .logo{
 	float: left;
 	width: 190px;
-	height: 88px;
+	height: 97px;
 
 
 }
@@ -152,15 +153,70 @@ a{
 	background-position: center;
 }
 
-.middle-search div{
+.middle{
+	float: left;
+	width: 672px;
+	height: 97px;
+}
+
+.middle-search{
+	width: 
+}
+
+.input{
 	float: left;
 }
 
-.middle-search div::after{
+.middle-search::after{
 	content: "";
 	display: block;
-	clear:both;
+	clear: both;
 }
+
+.middle .content1,
+.middle .content2{
+	display: inline-block;
+	width: 36px;
+	height: 22px;
+	margin-right: 4px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.content1{
+	background-color: #ff5000;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 5px 5px 0 0;
+
+}
+
+.mobile{
+	float: right;
+	width: 80px;
+	height: 97px;
+	border: 1px solid lavender;
+	text-align: center;
+}
+
+.mobile span{
+	display: block;
+	color: #f40;
+/*	width: 80px;*/
+/*	text-align: center;*/
+}
+
+
+
+/*.mobile a{
+	display: block;
+	width:80px;
+	height: 80px;
+	background-image: url(mtb.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% ;
+}*/
 
 </style>
 <div class="backgroud">
@@ -216,15 +272,22 @@ a{
 	<div class="logo"><a href="https://www.taobao.com" ></a></div>
 	<div class="middle">
 		<ul>
-			<li class="middle-top"><span>宝贝</span><span>天猫</span><span>店铺</span></li>
+			<li class="middle-top">
+				<span class="content1">宝贝</span>
+				<span class="content2">天猫</span>
+				<span class="content2">店铺</span>
+			</li>
 			<li class="middle-search">
 				<div class="input"><input type="text" name="content"></div>
-				<div class="search-button"><input type="submit" value="搜索"></div>
+				<div class="input"><input type="submit" value="搜索"></div>
 			</li>
 			<li class="middle-bottom"><span>新款连衣裙</span><span>四件套</span><span>潮流T恤</span><span>时尚女鞋</span><span>短裤</span><span>半身裙</span><span>男士外套</span><span>墙纸</span><span>行车记录仪</span><span>新款男鞋</span><span>耳机</span><span>时尚女包</span><span>沙发</span></li>
 		</ul>	
 	</div>
-	<div class="mobile"></div>
+	<div class="mobile">
+		<a href="https:www.taobao.com"><span>手机淘宝</span>
+		<img src="mtb.png" width="62px" height="62px" align="center"></a>
+	</div>
 </div>
 </body>
 </html>
