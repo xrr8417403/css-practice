@@ -159,11 +159,12 @@ a{
 	height: 97px;
 }
 
-.middle-search{
-	width: 
+.middle-top{
+	margin-left:25px;
 }
 
-.input{
+.input-wrap,
+.input-btn{
 	float: left;
 }
 
@@ -188,7 +189,52 @@ a{
 	color: #fff;
 	font-weight: 700;
 	border-radius: 5px 5px 0 0;
+}
 
+.content2{
+	color: #f40;
+}
+
+.content2:hover{
+	background-color: #f90;
+}
+
+.input-wrap{
+	padding: 0 20px;
+	height: 35px;
+	border: 2px solid #f40;
+	border-radius: 20px 0 0 20px;
+}
+
+.input-wrap #search{
+	width:472px;
+	height: 22px;
+	line-height: 22px; 
+	border: none;
+	outline: none;
+	margin-top: 8px;
+}
+
+.input-btn{
+/*		vertical-align: center;*/
+}
+
+.input-btn input{
+/*	display: block;*/
+	background-color: #f40;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	cursor: pointer;
+	height: 39px;
+	border-radius: 0 20px 20px 0;
+	width: 70px;
+	border: 1px solid #f40;
+
+}
+
+.middle-bottom span{
+	margin-right: 4px;
 }
 
 .mobile{
@@ -202,21 +248,111 @@ a{
 .mobile span{
 	display: block;
 	color: #f40;
-/*	width: 80px;*/
-/*	text-align: center;*/
 }
 
+.middle-bar-bg{
+	margin-top: 20px;
+	height: 30px;
+	background-color: #ff9000;
+}
 
+.middle-bar{
+	width: 1190px;
+	height: 30px;
+	margin:0 auto;
+}
 
-/*.mobile a{
-	display: block;
-	width:80px;
-	height: 80px;
-	background-image: url(mtb.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% ;
+/*.middle-bar ul{
+	float:left;
 }*/
+
+.middle-bar h2{
+	float: left;
+	width: 190px;
+	font-size: 16px;
+	line-height: 30px;
+	background-color: #ff5000;
+	text-align: center;
+	margin-right: 10px;
+}
+
+ul .list-item{
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	margin-right:25px;
+}
+
+div.bg-2{
+	width: 1190px;
+	height: 520px;
+	margin:0 auto;
+}
+
+.first-column{
+	width: 189px;
+	height: 520px;
+	border: 1px solid #f40;
+	border-top: none;
+	padding-top: 10px;
+	float: left;
+}
+
+.first-column li{
+	position: relative;
+	padding:0 5px 0 20px;
+}
+
+.first-column li::after{
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #424242;
+	border-bottom: none;
+	border-left: none;
+	transform: rotateZ(45deg);
+	position: absolute;
+	right: 10px;
+	top:15px;
+
+}
+
+.first-column li:hover{
+	color: #f40;
+	background-color: #ffe4dc;
+	height: 32px;
+}
+
+.first-column li a{
+	/*margin:0 10px ;*/
+	color: #666;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 0 5px;
+}
+
+.bg-3{
+	width: 520px;
+	height: 520px;
+	background-color: gray;
+}
+
+.bg-4{
+	width: 290px;
+	height: 520px;
+	background-color: green;
+}
+
+.bg-3,
+.bg-4{
+	float: left;
+	margin:5px 0 0 5px;
+}
 
 </style>
 <div class="backgroud">
@@ -278,8 +414,10 @@ a{
 				<span class="content2">店铺</span>
 			</li>
 			<li class="middle-search">
-				<div class="input"><input type="text" name="content"></div>
-				<div class="input"><input type="submit" value="搜索"></div>
+				<form>
+				<div class="input-wrap"><input id="search" type="text" name="content"></div>
+				<div class="input-btn"><input type="submit" value="搜索"></div>
+				</form>
 			</li>
 			<li class="middle-bottom"><span>新款连衣裙</span><span>四件套</span><span>潮流T恤</span><span>时尚女鞋</span><span>短裤</span><span>半身裙</span><span>男士外套</span><span>墙纸</span><span>行车记录仪</span><span>新款男鞋</span><span>耳机</span><span>时尚女包</span><span>沙发</span></li>
 		</ul>	
@@ -289,5 +427,50 @@ a{
 		<img src="mtb.png" width="62px" height="62px" align="center"></a>
 	</div>
 </div>
+<div class="middle-bar-bg">
+	<div class="middle-bar">
+		<h2>主题市场</h2>
+		<ul>
+			<li class="list-item">天猫</li>
+			<li class="list-item">聚划算</li>
+			<li class="list-item">天猫超市</li>
+			<li class="list-item">淘抢购</li>
+			<li class="list-item">电器城</li>
+			<li class="list-item">司法拍卖</li>
+			<li class="list-item">淘宝心选</li>
+			<li class="list-item">兴农扶贫</li>
+			<li class="list-item">飞猪旅行</li>
+			<li class="list-item">智能生活</li>
+			<li class="list-item">苏宁易购</li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<div class="bg-2">
+	<div class="first-column">
+		<ul>
+			<li><a href="#">女装</a>/<a href="#">男装</a>/<a href="#">内衣</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">其他配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">女装</a>/<a href="#">男装</a>/<a href="#">内衣</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+			<li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a></li>
+		</ul>
+	</div>
+	<div class="bg-3"></div>
+	<div class="bg-4"></div>
+</div>
+
+
 </body>
 </html>
